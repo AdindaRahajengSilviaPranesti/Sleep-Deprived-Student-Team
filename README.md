@@ -107,5 +107,33 @@ Using multiple linear regression, try to find the best regression model that is 
 
   Same as before, This plot can be used to visualize the relationship between the two variables and to identif  any patterns or trends in the data.
 
+* **★ Time From Last Drug Taken VS Wear Off Duration Scatter Plot ★**
+  &nbsp;&nbsp;
+  ```
+  plt.scatter(df['time_from_last_drug_taken'], df['wo_duration'])
+  plt.title('Time From Last Drug Taken VS Wear Off Duration')
+  plt.xlabel('Time From Last Drug Taken')
+  plt.ylabel('Wear Off Duration')
+  plt.grid(True)
+  plt.savefig("DrugTime.jpg")
+  plt.show()
+  ```
+  The code is used to create a scatter plot of two variables, **"time_from_last_drug_taken"** and **"wo_duration"**, from a pandas DataFrame called **"df"**. The scatter plot is then saved as an image file named **"DrugTime.jpg"**. Here is a summary of what each line of the code does:
+  * **plt.scatter(df['time_from_last_drug_taken'], df['wo_duration'])**
+      This line creates a scatter plot with **"time_from_last_drug_taken"** on the x-axis and **"wo_duration"**         on the y-axis. The data for these variables is taken from the pandas DataFrame **"df"**.
+  * **plt.title('Time From Last Drug Taken VS Wear Off Duration')**
+      This line sets the title of the plot to **"Time From Last Drug Taken VS Wear Off Duration".**
+  * **plt.xlabel('Time From Last Drug Taken')**
+      This line sets the label for the x-axis to **"Time From Last Drug Taken".**
+  * **plt.ylabel('Wear Off Duration')**
+      This line sets the label for the y-axis to **"Wear Off Duration".**
+  * **plt.grid(True)**
+      This line adds a grid to the plot.
+  * **plt.savefig("DrugTime.jpg")**
+      This line saves the plot as an image file named **"DrugTime.jpg".**
+  * **plt.show()**
+      This line displays the plot on the screen.
+
+   Same as before, This plot can be used to visualize the relationship between the two variables and to identify any patterns or trends in the data.
   
 ###### HEADING 4
