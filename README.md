@@ -89,7 +89,7 @@ Using multiple linear regression, try to find the best regression model that is 
   plt.savefig("StressScore.jpg")
   plt.show()
   ```
-      The code is used to create a scatter plot of two variables, **"stress_score"** and **"wo_duration"**, from a pandas DataFrame called **"df"**. The scatter plot is then saved as an image file name  **"StressScore.jpg"**. Here is a summary of what each line of the code does:
+   The code is used to create a scatter plot of two variables, **"stress_score"** and **"wo_duration"**, from a pandas DataFrame called **"df"**. The scatter plot is then saved as an image file name  **"StressScore.jpg"**. Here is a summary of what each line of the code does:
   * **plt.scatter(df['stress_score'], df['wo_duration'])**
       This line creates a scatter plot with **"stress_score"** on the x-axis and **"wo_duration"** on the y-axis.       The data for these variables is taken from the pandas DataFrame **"df".**
   * **plt.title('Stress Score VS Wearing Off Duration')**
@@ -105,7 +105,7 @@ Using multiple linear regression, try to find the best regression model that is 
   * **plt.show()**
       This line displays the plot on the screen.
 
-    Same as before, This plot can be used to visualize the relationship between the two variables and to identif  any patterns or trends in the data.
+  Same as before, This plot can be used to visualize the relationship between the two variables and to identif  any patterns or trends in the data.
 
   
 ###### HEADING 4
