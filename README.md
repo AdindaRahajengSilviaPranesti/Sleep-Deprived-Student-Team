@@ -35,7 +35,18 @@ Using multiple linear regression, try to find the best regression model that is 
 - **numpy**: library for numeric computation.
 - **statsmodels.api**: library for statistical modeling.
 
-After importing this library, we can use its functions and methods to perform various tasks such as reading, cleaning, and analyzing data, creating and evaluating machine learning models, and creating data and model visualizations. Overall, these libraries provide a powerful toolkit for data analysis and machine learning in Python.
-* ff
+    After importing this library, we can use its functions and methods to perform various tasks such as reading, cleaning, and     
+  analyzing data, creating and evaluating machine learning models, and creating data and model visualizations. Overall, these libraries 
+  provide a powerful toolkit for data analysis and machine learning in Python.
+* **★ Import CSV Dataset ★**
+  &nbsp;&nbsp;
+  ```
+  df = pd.read_csv('combined_data(1).csv')
+  df
+  ```
+  Code **df = pd.read_csv('combined_data(1).csv')** reads a CSV file named **"combined_data(1).csv"** and saves it as a pandas     
+  DataFrame called **"df"**. Once the data is loaded into the DataFrame, we can use pandas and other libraries to manipulate, analyze 
+  and visualize the data.
+* vv
 
 ###### HEADING 4
