@@ -135,5 +135,24 @@ Using multiple linear regression, try to find the best regression model that is 
       This line displays the plot on the screen.
 
    Same as before, This plot can be used to visualize the relationship between the two variables and to identify any patterns or trends in the data.
+
+* **★ Set IV and DV ★**
+  &nbsp;&nbsp;
+  ```
+  x = df[['heart_rate', 'stress_score', 'time_from_last_drug_taken']]
+  y = df['wo_duration']
+  ```
+  The code is used to select a subset of columns from a pandas DataFrame called **"df"** and store them in a new DataFrame called **"x"**. The selected columns are **"heart_rate", "stress_score", and "time_from_last_drug_taken".** The **"wo_duration"** column is also selected and stored in a separate variable called **"y"**. 
+
+  And also this code is used to select a subset of columns from a pandas DataFrame and store them in a new DataFrame, as well as to select a single column and store it in a separate variable. 
+
+  Here is a summary of what each line of the code does:
+  * **x = df[['heart_rate', 'stress_score', 'time_from_last_drug_taken']]**
+      This line creates a new DataFrame called **"x"** that contains the columns **"heart_rate", "stress_score",        and "time_from_last_drug_taken"** from the pandas DataFrame **"df".**
+  * **y = df['wo_duration']**
+      This line creates a new variable called **"y"** that contains the **"wo_duration" column from the pandas          DataFrame "df".**
+
+
+
   
 ###### HEADING 4
