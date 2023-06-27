@@ -61,9 +61,9 @@ Using multiple linear regression, try to find the best regression model that is 
   plt.show()
   ```
   The purpose of the code is to create a scatter plot of two variables, "heart_rate" and "wo_duration", from a pandas DataFrame called    "df". The scatter plot is then saved as an image file named "HeartRate.jpg". Here is a summary of what each line of the code does:
-  * **plt.scatter(df['heart_rate'], df['wo_duration'])**0
+  * **plt.scatter(df['heart_rate'], df['wo_duration'])**
       This line creates a scatter plot with **"heart_rate"** on the x-axis and **"wo_duration"** on the y-axis. The data for these            variables is taken from the pandas DataFrame **"df".**
-  * **plt.title('Heart Rate VS Wearing Off Duration') **
+  * **plt.title('Heart Rate VS Wearing Off Duration')**
       This line sets the title of the plot to **"Heart Rate VS Wearing Off Duration"**
   * **plt.xlabel('Heart Rate')**
       This line sets the label for the x-axis to **"Heart Rate".**
@@ -75,5 +75,6 @@ Using multiple linear regression, try to find the best regression model that is 
       This line saves the plot as an image file named **"HeartRate.jpg".**
   * **plt.show()**
       This line displays the plot on the screen.
+    
   Overall, This plot can be used to visualize the relationship between the two variables and to identify any patterns or trends in the     data.
 ###### HEADING 4
