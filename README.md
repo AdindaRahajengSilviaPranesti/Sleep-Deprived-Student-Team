@@ -38,6 +38,7 @@ Using multiple linear regression, try to find the best regression model that is 
     After importing this library, we can use its functions and methods to perform various tasks such as reading, cleaning, and     
   analyzing data, creating and evaluating machine learning models, and creating data and model visualizations. Overall, these libraries 
   provide a powerful toolkit for data analysis and machine learning in Python.
+
 * **★ Import CSV Dataset ★**
   &nbsp;&nbsp;
   ```
@@ -47,6 +48,32 @@ Using multiple linear regression, try to find the best regression model that is 
   Code **df = pd.read_csv('combined_data(1).csv')** reads a CSV file named **"combined_data(1).csv"** and saves it as a pandas     
   DataFrame called **"df"**. Once the data is loaded into the DataFrame, we can use pandas and other libraries to manipulate, analyze 
   and visualize the data.
-* vv
 
+* **★ Heart Rate VS Wearing Off Duration Scatter Plot ★**
+  &nbsp;&nbsp;
+  ```
+  plt.scatter(df['heart_rate'], df['wo_duration'])
+  plt.title('Heart Rate VS Wearing Off Duration')
+  plt.xlabel('Heart Rate')
+  plt.ylabel('Wearing Off Duration')
+  plt.grid(True)
+  plt.savefig("HeartRate.jpg")
+  plt.show()
+  ```
+  The purpose of the code is to create a scatter plot of two variables, "heart_rate" and "wo_duration", from a pandas DataFrame called    "df". The scatter plot is then saved as an image file named "HeartRate.jpg". Here is a summary of what each line of the code does:
+  * **plt.scatter(df['heart_rate'], df['wo_duration'])**0
+      This line creates a scatter plot with **"heart_rate"** on the x-axis and **"wo_duration"** on the y-axis. The data for these            variables is taken from the pandas DataFrame **"df".**
+  * **plt.title('Heart Rate VS Wearing Off Duration') **
+      This line sets the title of the plot to **"Heart Rate VS Wearing Off Duration"**
+  * **plt.xlabel('Heart Rate')**
+      This line sets the label for the x-axis to **"Heart Rate".**
+  * **plt.ylabel('Wearing Off Duration')**
+      This line sets the label for the y-axis to **"Wearing Off Duration".**
+  * **plt.grid(True)**
+      This line adds a grid to the plot.
+  * **plt.savefig("HeartRate.jpg")**
+      This line saves the plot as an image file named **"HeartRate.jpg".**
+  * **plt.show()**
+      This line displays the plot on the screen.
+  Overall, This plot can be used to visualize the relationship between the two variables and to identify any patterns or trends in the     data.
 ###### HEADING 4
