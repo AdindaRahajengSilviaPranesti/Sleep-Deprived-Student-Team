@@ -1,4 +1,4 @@
-<center># Sleep-Deprived-Student-Team ☻</center>
+#Sleep-Deprived-Student-Team ☻
 
 ## ❀ Our Group Member : ❀
 - Adinda Rahajeng S.P &nbsp;&nbsp;&nbsp;2141720158
@@ -13,11 +13,8 @@ Over time, the medicine’s effective time shortens, causing discomfort among PD
 ---
 
 #### Task
-Using multiple linear regression, try to find the best regression model that is suitable to represent the case: 
-
--helping the doctors to create specific treatment strategies to manage Parkinson's disease and its associated symptoms properly
-- 
-It means you are asked to create a model that can anticipate the "wearing-off" of anti-Parkinson Disease medication.
+Using multiple linear regression, try to find the best regression model that is suitable to represent the case: **helping the doctors to create specific treatment strategies to manage Parkinson's disease and its associated symptoms properly**. It means you are asked to create a model that can anticipate the "wearing-off" of anti-Parkinson Disease medication.
 
 ---
+#### Results from our group:
 ###### HEADING 4
