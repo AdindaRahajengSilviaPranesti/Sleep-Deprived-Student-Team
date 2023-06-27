@@ -27,6 +27,15 @@ Using multiple linear regression, try to find the best regression model that is 
   import numpy as np
   import statsmodels.api as sm
   ```
+  The code above is used to import some Python libraries for data analysis and machine learning. Libraries are:
+- **pandas**: library for data manipulation and analysis.
+- **sklearn**: library for machine learning and data mining.
+- **matplotlib.pyplot**: library for data visualization.
+- **seaborn**: library for data visualization based on matplotlib.
+- **numpy**: library for numeric computation.
+- **statsmodels.api**: library for statistical modeling.
+
+After importing this library, we can use its functions and methods to perform various tasks such as reading, cleaning, and analyzing data, creating and evaluating machine learning models, and creating data and model visualizations. Overall, these libraries provide a powerful toolkit for data analysis and machine learning in Python.
 * ff
 
 ###### HEADING 4
