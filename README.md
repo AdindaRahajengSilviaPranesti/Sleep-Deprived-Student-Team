@@ -12,9 +12,21 @@ Over time, the medicine’s effective time shortens, causing discomfort among PD
 
 ---
 
-#### Task
+### Task
 Using multiple linear regression, try to find the best regression model that is suitable to represent the case: **helping the doctors to create specific treatment strategies to manage Parkinson's disease and its associated symptoms properly**. It means you are asked to create a model that can anticipate the "wearing-off" of anti-Parkinson Disease medication.
 
 ---
-#### Results from our group:
+### Results from our group:
+* **★ Import Modules and Libraries ★**
+  &nbsp;&nbsp;
+  ```
+  import pandas as pd
+  from sklearn import linear_model
+  import matplotlib.pyplot as plt
+  import seaborn as sns
+  import numpy as np
+  import statsmodels.api as sm
+  ```
+* ff
+
 ###### HEADING 4
