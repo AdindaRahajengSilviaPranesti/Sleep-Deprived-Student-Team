@@ -77,4 +77,35 @@ Using multiple linear regression, try to find the best regression model that is 
       This line displays the plot on the screen.
     
   Overall, This plot can be used to visualize the relationship between the two variables and to identify any patterns or trends in the     data.
+
+* **★ Stress Score VS Wearing Off Duration Scatter Plot ★**
+  &nbsp;&nbsp;
+  ```
+  plt.scatter(df['stress_score'], df['wo_duration'])
+  plt.title('Stress Score VS Wearing Off Duration')
+  plt.xlabel('Stress Score')
+  plt.ylabel('Wearing Off Duration')
+  plt.grid(True)
+  plt.savefig("StressScore.jpg")
+  plt.show()
+  ```
+      The code is used to create a scatter plot of two variables, **"stress_score"** and **"wo_duration"**, from a pandas DataFrame called **"df"**. The scatter plot is then saved as an image file name  **"StressScore.jpg"**. Here is a summary of what each line of the code does:
+  * **plt.scatter(df['stress_score'], df['wo_duration'])**
+      This line creates a scatter plot with **"stress_score"** on the x-axis and **"wo_duration"** on the y-axis.       The data for these variables is taken from the pandas DataFrame **"df".**
+  * **plt.title('Stress Score VS Wearing Off Duration')**
+      This line sets the title of the plot to **"Stress Score VS Wearing Off Duration".**
+  * **plt.xlabel('Stress Score')**
+      This line sets the label for the x-axis to **"Stress Score".**
+  * **plt.ylabel('Wearing Off Duration')**
+      This line sets the label for the y-axis to **"Wearing Off Duration".**
+  * **plt.grid(True)**
+      This line adds a grid to the plot.
+  * **plt.savefig("StressScore.jpg")**
+      This line saves the plot as an image file named **"StressScore.jpg".**
+  * **plt.show()**
+      This line displays the plot on the screen.
+
+    Same as before, This plot can be used to visualize the relationship between the two variables and to identif  any patterns or trends in the data.
+
+  
 ###### HEADING 4
