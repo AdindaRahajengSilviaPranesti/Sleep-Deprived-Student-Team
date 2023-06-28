@@ -154,14 +154,11 @@ Using multiple linear regression, try to find the best regression model that is 
 
 * **★ Calculate Regression with Sklearn ★**
  &nbsp;&nbsp;
-  ```
-regr = linear_model.LinearRegression()
-regr.fit(x, y)
-print('Intercept: \n', regr.intercept_)
-print('Coefficients: \n', regr.coef_)
- ```
+```
+System.out.println("Halo dunia");
+```
+ 
 The function of the given code is to perform linear regression using the **`LinearRegression()`** model from the **`linear_model`** module in the scikit-learn library.
-
 Here is an explanation of each line of code:
 * **`regr = linear_model.LinearRegression()`** : Creates a `regr` object which is an instance of the `LinearRegression()` class. This object will be used to perform linear regression.
 * **`regr.fit(x, y)`** : Uses the `fit()` method on the `regr` object to train a linear regression model. `x` is input data which contains the features used to make predictions, while `y` is the target or value to be predicted.
