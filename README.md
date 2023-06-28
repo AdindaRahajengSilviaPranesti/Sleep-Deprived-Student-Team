@@ -206,11 +206,11 @@ x = df['heart_rate']
 model = LinearRegression()
 ```
 The function and purpose of the **model = LinearRegression()** line of code is as follows:
-* Function:
+* **Function**:
 1. Creates a linear regression model object using the LinearRegression class from the linear_model module in the scikit-learn library.
 2. This model object will be used to train and make predictions using the linear regression method.
 
-* Objective:
+* **Objective**:
 1. Initialize the model object that will be used to perform linear regression on the data.
 2. Allows us to train models on training data and use them to make predictions on new data.
 3. The resulting linear regression model can be used to study the relationship between input variables (features) and target variables (values to be predicted).
@@ -220,6 +220,19 @@ The function and purpose of the **model = LinearRegression()** line of code is a
 ```
 model.fit(x.values.reshape(-1, 1), y)
 ```
+The function of the **`model.fit(x.values.reshape(-1, 1), y)`** line of code is to train a linear regression model using training data **`x`** and target values **`y`**.
+
+The following is an explanation of each component in the code:
+1. **`x.values.reshape(-1, 1)`**: Takes the value from the `x` variable and converts it into a one-dimensional array using **`.values`**. Then, use **`.reshape(-1, 1)`** to convert the array into a matrix with dimensions suitable for use in the linear regression model.
+- Reshaping is done with **`-1`** : the number of rows is adjusted automatically based on the second dimension specified, i.e. `1`.
+- This is necessary because the linear regression model in scikit-learn expects a feature matrix with two dimensions.
+
+2. **`y`**: The `y` variable contains the target value to be predicted. This target value must match the training data used.
+
+3. **`model.fit(x.values.reshape(-1, 1), y)`**: The **`.fit()`** method on the `model` object is used to train the linear regression model. The training data `x` and target values `y` are used as arguments and the model learns the relationship between the input and target variables.
+
+After calling the **`.fit()`** method, the linear regression model will be trained using the training data provided, so that it can be used to make predictions on new data.
+
 
 &nbsp;&nbsp;
 ```
