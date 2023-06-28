@@ -170,5 +170,26 @@ Here is an explanation of each line of code:
 
 Using the above code, you can train a linear regression model with **`x`** and **`y`** data, and then display the intercept values and coefficients obtained from the model.
 
+* **★ Calculate Regression with Statsmodels ★**
+ &nbsp;&nbsp;
+```
+x = sm.add_constant(x)
+model = sm.OLS(y, x).fit()
+predictions = model.predict(x)
+print_model = model.summary()
+print(print_model)
+```
+The given code has some functionality related to linear regression using the statsmodels library. Here's an explanation of each line of code:
+* **`x = sm.add_constant(x)`** : Adds a constant to the **`x`** input data. The **`add_constant()`** method from `statsmodels` is used to add constant columns that are normally needed in linear regression models. This constant represents the intercept or bias value in the regression equation.
+
+* **`model = sm.OLS(y, x).fit()`** : Creates a linear regression model object using the Ordinary Least Squares (OLS) method of `statsmodels`. **`y`** is the target or value to be predicted, and `x` is the feature matrix including the added constants. The **`fit()`** method is used to train the model with the given data.
+
+* **`predictions = model.predict(x)`** : Uses a trained model to make predictions on `x` data. The **`predict()`** method is used to generate predictions based on a trained linear regression model.
+
+* **`print_model = model.summary()`** : Gets the summary statistics of the trained linear regression model. The **`summary()`** method is used to generate a summary that includes various important statistics such as coefficient values, p-values, R-squared, etc.
+
+* **`print(print_model)`** : Prints the summary statistics of the model to output.
+
+Using the code, you can train linear regression models, make predictions, and get summary statistics from the model using the statsmodels library.
 
 ###### HEADING 4
