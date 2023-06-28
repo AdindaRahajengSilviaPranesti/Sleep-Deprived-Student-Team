@@ -189,7 +189,70 @@ The given code has some functionality related to linear regression using the sta
 * **`print_model = model.summary()`** : Gets the summary statistics of the trained linear regression model. The **`summary()`** method is used to generate a summary that includes various important statistics such as coefficient values, p-values, R-squared, etc.
 
 * **`print(print_model)`** : Prints the summary statistics of the model to output.
-
+  
 Using the code, you can train linear regression models, make predictions, and get summary statistics from the model using the statsmodels library.
 
+* **★ Residual Plot Line Model ★**
+ &nbsp;&nbsp;
+```
+from sklearn.linear_model import LinearRegression
+x = df['heart_rate']
+```
+* The code given imports the LinearRegression class from the **linear_model** module in the scikit-learn library. Next, x is initialized with data from the **'heart_rate'** column of a DataFrame df.
+  
+
+&nbsp;&nbsp;
+```
+model = LinearRegression()
+```
+The function and purpose of the **model = LinearRegression()** line of code is as follows:
+Function:
+1. Creates a linear regression model object using the LinearRegression class from the linear_model module in the scikit-learn library.
+2. This model object will be used to train and make predictions using the linear regression method.
+
+Objective:
+1. Initialize the model object that will be used to perform linear regression on the data.
+2. Allows us to train models on training data and use them to make predictions on new data.
+3. The resulting linear regression model can be used to study the relationship between input variables (features) and target variables (values to be predicted).
+
+
+&nbsp;&nbsp;
+```
+model.fit(x.values.reshape(-1, 1), y)
+```
+
+&nbsp;&nbsp;
+```
+model.intercept_
+```
+
+
+&nbsp;&nbsp;
+```
+model.coef_
+```
+
+
+&nbsp;&nbsp;
+```
+# Create a figure and axes for the plot
+figure = plt.figure(figsize=(10, 5))
+axes = plt.axes()
+
+# Display the data points using a scatterplot
+sns.scatterplot(x=x, y=y, ax=axes)
+
+# Plot the regression line
+sns.lineplot(x=[0, 10], y=[model.intercept_, (10 * model.coef_[0] + model.intercept_)], ax=axes, color='blue')
+
+# Plot the residuals
+for x_value, y_value in zip(x, y):
+    predicted_y = x_value * model.coef_[0] + model.intercept_
+    axes.plot([x_value, x_value], [y_value, predicted_y], color='red')
+
+# Save the plot as an image file named 'HeartRateLine.jpg'
+plt.savefig('HeartRateLine.jpg')
+```
+
+  
 ###### HEADING 4
