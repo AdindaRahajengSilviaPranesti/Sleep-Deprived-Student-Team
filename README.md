@@ -152,7 +152,14 @@ Using multiple linear regression, try to find the best regression model that is 
   * **y = df['wo_duration']**
       This line creates a new variable called **"y"** that contains the **"wo_duration" column from the pandas          DataFrame "df".**
 
+* **★ Calculate Regression with Sklearn ★**
+ &nbsp;&nbsp;
+  ```
+regr = linear_model.LinearRegression()
+regr.fit(x, y)
 
-
+print('Intercept: \n', regr.intercept_)
+print('Coefficients: \n', regr.coef_)
+ ```
   
 ###### HEADING 4
