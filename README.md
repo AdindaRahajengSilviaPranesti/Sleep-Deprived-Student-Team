@@ -157,7 +157,6 @@ Using multiple linear regression, try to find the best regression model that is 
   ```
 regr = linear_model.LinearRegression()
 regr.fit(x, y)
-
 print('Intercept: \n', regr.intercept_)
 print('Coefficients: \n', regr.coef_)
  ```
