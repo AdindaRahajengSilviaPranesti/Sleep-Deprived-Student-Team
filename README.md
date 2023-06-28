@@ -160,5 +160,15 @@ regr.fit(x, y)
 print('Intercept: \n', regr.intercept_)
 print('Coefficients: \n', regr.coef_)
  ```
-  
+The function of the given code is to perform linear regression using the **`LinearRegression()`** model from the **`linear_model`** module in the scikit-learn library.
+
+Here is an explanation of each line of code:
+* **`regr = linear_model.LinearRegression()`** : Creates a `regr` object which is an instance of the `LinearRegression()` class. This object will be used to perform linear regression.
+* **`regr.fit(x, y)`** : Uses the `fit()` method on the `regr` object to train a linear regression model. `x` is input data which contains the features used to make predictions, while `y` is the target or value to be predicted.
+* **`print('Intercept: \n', regr. intercept_)`** : Returns the intercept value of the linear regression model. The intercept value is a constant value in the linear regression equation.
+* **`print('Coefficients: \n', regr.coef_)`** : Returns the coefficients of the linear regression model. The coefficient value describes the relationship between each feature and the target to be predicted.
+
+Using the above code, you can train a linear regression model with **`x`** and **`y`** data, and then display the intercept values and coefficients obtained from the model.
+
+
 ###### HEADING 4
