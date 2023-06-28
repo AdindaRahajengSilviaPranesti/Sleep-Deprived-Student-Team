@@ -155,7 +155,10 @@ Using multiple linear regression, try to find the best regression model that is 
 * **★ Calculate Regression with Sklearn ★**
  &nbsp;&nbsp;
 ```
-System.out.println("Halo dunia");
+regr = linear_model.LinearRegression()
+regr.fit(x, y)
+print('Intercept: \n', regr.intercept_)
+print('Coefficients: \n', regr.coef_)
 ```
  
 The function of the given code is to perform linear regression using the **`LinearRegression()`** model from the **`linear_model`** module in the scikit-learn library.
