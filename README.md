@@ -206,11 +206,11 @@ x = df['heart_rate']
 model = LinearRegression()
 ```
 The function and purpose of the **model = LinearRegression()** line of code is as follows:
-Function:
+* Function:
 1. Creates a linear regression model object using the LinearRegression class from the linear_model module in the scikit-learn library.
 2. This model object will be used to train and make predictions using the linear regression method.
 
-Objective:
+* Objective:
 1. Initialize the model object that will be used to perform linear regression on the data.
 2. Allows us to train models on training data and use them to make predictions on new data.
 3. The resulting linear regression model can be used to study the relationship between input variables (features) and target variables (values to be predicted).
