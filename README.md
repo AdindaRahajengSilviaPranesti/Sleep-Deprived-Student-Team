@@ -238,13 +238,20 @@ After calling the **`.fit()`** method, the linear regression model will be train
 ```
 model.intercept_
 ```
-
+The function of **`model.intercept_`** is to access the intercept (bias) value of the linear regression model that has been trained.
+After the linear regression model is trained using the **`.fit()`** method, the **`intercept_`** attribute on the **`model`** object will store the intercept (bias) value used in the linear regression equation.
+By using **`model.intercept_`**, we can access the intercept value of the model that has been trained and use it for interpretation or further calculations.
 
 &nbsp;&nbsp;
 ```
 model.coef_
 ```
+The function of **`model.coef_`** is to access the coefficient values of a trained linear regression model.
+After the linear regression model is trained using the **`.fit()`** method, the **`coef_`** attribute on the `model` object will store the coefficient values used in the linear regression equation.
 
+The coefficients in linear regression describe the relationship between each feature and the target value you want to predict. Using **`model.coef_`**, you can access the coefficient values of the trained model and understand the contribution of each feature to the prediction of the target value.
+
+For example, if you have multiple features in a linear regression model, **`model.coef_`** will provide a coefficient for each feature, allowing you to evaluate the relative effect of each feature on the target value.
 
 &nbsp;&nbsp;
 ```
@@ -267,5 +274,24 @@ for x_value, y_value in zip(x, y):
 plt.savefig('HeartRateLine.jpg')
 ```
 
-  
+The given code has the objective of constructing a plot showing the data points, regression lines, and residuals in a trained linear regression model.
+Here is an explanation of each line of code:
+
+1. **`figure = plt.figure(figsize=(10, 5))`**: Creates a `figure` object with a size (width, height) of (10, 5) using `plt.figure()`. This object will be used as a container for the plot.
+
+2. **`axes = plt.axes()`**: Creates an `axes` object using `plt.axes()`. This object will be used as the area for plotting.
+
+3. **`sns.scatterplot(x=x, y=y, ax=axes)`**: Use seaborn to create a scatter plot with `x` as the x-axis and `y` as the y-axis. The data displayed is the data points contained in `x` and `y`.
+
+4. **`sns.lineplot(x=[0, 10], y=[model.intercept_, (10 * model.coef_[0] + model.intercept_)], ax=axes, color='blue')`** : Using seaborn to plot the regression line. The regression line is defined by two points (0, intercept) and (10, 10 * coef + intercept). This line will be shown in blue.
+
+5. **`for x_value, y_value in zip(x, y):`** : Iterates over each `x` and `y` value simultaneously.
+
+6. **`predicted_y = x_value * model.coef_[0] + model.intercept_`** : Calculates the predicted `predicted_y` value using the coefficients and intercept of a linear regression model.
+
+7. **`axes.plot([x_value, x_value], [y_value, predicted_y], color='red')`**: Use `axes.plot()` to create a vertical line connecting data points to the predicted values. This line will be displayed in red.
+
+8. **`plt.savefig('HeartRateLine.jpg')`**: Saves the plot as an image file named 'HeartRateLine.jpg'.
+
+With the code above, you will get a plot showing the data points, regression lines, and residuals in a trained linear regression model.
 ###### HEADING 4
